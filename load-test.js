@@ -32,3 +32,9 @@ export default function () {
   sleep(2)
 }
 
+export function handleSummary(data) {
+  return {
+    'testResults/summary.json': JSON.stringify(data), //the default data object
+  };
+}
+
